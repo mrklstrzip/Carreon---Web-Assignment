@@ -1,0 +1,104 @@
+body { 
+    background: #1a1c1e; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+.almanac-box { 
+    width: 900px; 
+    height: 550px; 
+    background: #aab7b8; 
+    border: 10px solid #263238; 
+    display: flex; 
+    border-radius: 20px; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.9); 
+}
+
+.left-page { 
+    width: 50%; 
+    border-right: 4px solid #37474f; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 8px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
+}
+
+.grid::-webkit-scrollbar { width: 8px; }
+.grid::-webkit-scrollbar-thumb { background: #37474f; border-radius: 10px; }
+
+.card { 
+    background: #546e7a; 
+    border: 2px solid #263238; 
+    cursor: pointer; 
+    height: 65px; 
+    transition: 0.1s; 
+    position: relative;
+}
+
+.card:hover { 
+    transform: scale(1.1); 
+    border-color: #ff5252; 
+    z-index: 5; 
+}
+
+.card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    filter: grayscale(20%);
+}
+
+.right-page { 
+    width: 50%; 
+    padding: 40px; 
+    text-align: center; 
+    color: #212121; 
+}
+
+.img-frame { 
+    width: 180px; 
+    height: 180px; 
+    border: 5px solid #263238; 
+    margin: 0 auto 20px; 
+    background: #eceff1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+}
+
+.img-frame img { 
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.bckbtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    padding: 1vw 2vw;          
+    font-size: 1.2vw;          
+    background-color: #37474f;
+    color: #ff5252;
+    border: 1px solid #ff5252;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    font-weight: bold;
+}
+
+.bckbtn:hover {
+    transform: scale(1.05);
+    background-color: #263238;
+}

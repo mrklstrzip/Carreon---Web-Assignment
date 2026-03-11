@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    height:100vh;
+
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    width:60%;
+}
+
+.title{
+    font-family: 'Creepster', cursive;
+    font-size:5vw;
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.paragraph{
+    font-size:1.4vw;
+    color:white;
+    line-height:1.6;
+    background: rgba(0,0,0,0.5);
+    padding:2vw;
+    border-radius:1vw;
+}
+
+.bckbtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 100;
+}
+
+.bckbtn:hover {
+    transform: scale(1.05);
+    background-color: darkgreen;
+}

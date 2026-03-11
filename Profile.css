@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Profilebg.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.imgcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.profileinfo {
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+}
+
+.bckbtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    
+    padding: 1vw 2vw;           
+    font-size: 1.2vw;           
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.bckbtn:hover {
+    transform: scale(1.05);
+    background-color: darkgreeen;
+}

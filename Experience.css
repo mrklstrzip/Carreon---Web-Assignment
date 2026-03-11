@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("AlmanacExperience.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+h1 {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 5vw;
+    color: #545454;
+    -webkit-text-stroke: 0.01vw lightgray;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+h2 {
+    color: white;
+}
+
+.years-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70%; 
+    top: 15%;
+}
+
+.year-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.year-block h2 {
+    font-family: 'League Gothic', sans-serif;
+    font-size:6vw;
+    margin-bottom: 1vw;
+}
+
+.btn.choice {
+    display: inline-block;
+    width: 15vw;
+    height: 5vw;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Impact, Charcoal, sans-serif;
+    border-radius: 1vw;
+    transition: 0.3s;
+    font-size: 3vw;
+    margin-top: 3vw;
+    text-align: center;
+    line-height: 5vw;
+}
+
+.btn.choice:hover {
+    cursor: pointer;
+}
+
+.back {
+    width: 10vw;
+    height: 3vw;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background: #c7966f;
+    border-radius: 2vw;
+    border: 0.1vw solid darkblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back:hover {
+    background: #d9a87c;
+}
+
+.btn.choice.first {
+    color: #ffde59;
+    font-family: 'Creepster', cursive;
+    margin-top: 4vw;
+}
+
+.btn.choice.first:hover {
+    color: red;
+    font-family: 'Creepster', cursive;
+    margin-top: 4vw;
+}
+
+.btn.choice.second {
+    color: green;
+    font-family: 'Creepster', cursive;
+    margin-top: 4vw;
+}
+
+.btn.choice.second:hover {
+    color: red;
+    font-family: 'Creepster', cursive;
+    margin-top: 4vw;
+}

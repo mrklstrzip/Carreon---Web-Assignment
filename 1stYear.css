@@ -1,0 +1,95 @@
+body { 
+    background: #1b3022;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+.almanac-box { 
+    width: 900px; 
+    height: 550px; 
+    background: #d4c391; 
+    border: 10px solid #3e2723; 
+    display: flex; 
+    border-radius: 20px; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8); 
+}
+.left-page { 
+    width: 50%; 
+    border-right: 4px solid #5d4037; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+}
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 8px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
+}
+.card { 
+    background: #795548; 
+    border: 2px solid #3e2723; 
+    cursor: pointer; 
+    height: 65px; 
+    transition: 0.1s; 
+    position: relative;
+}
+.card:hover { 
+    transform: scale(1.1); 
+    border-color: #fbff00; 
+    z-index: 5; 
+}
+
+.card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.right-page { 
+    width: 50%; 
+    padding: 40px; 
+    text-align: center; 
+    color: #3e2723; 
+}
+
+.img-frame { 
+    width: 180px; 
+    height: 180px; 
+    border: 5px solid #3e2723; 
+    margin: 0 auto 20px; 
+    background: #fff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+}
+
+.img-frame img { 
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.bckbtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    
+    padding: 1vw 2vw;           
+    font-size: 1.2vw;           
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.bckbtn:hover {
+    transform: scale(1.05);
+    background-color: #5d4037;;
+}

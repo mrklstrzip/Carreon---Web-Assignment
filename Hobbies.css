@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Creepster', cursive;
+    
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 0.2s ease-in-out;
+}
+
+section {
+    padding: 40px 10%;
+}
+
+.title {
+    border-bottom: 2px solid #000;
+    width: fit-content;
+    margin: 3vw auto 3vw auto;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.title h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.cards {
+    position: relative;
+    height: 300px;
+}
+
+.card {
+    position: absolute;
+    text-align: center;
+    border: none;
+    background: transparent;
+}
+
+.card img {
+    width: 30vw;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.left {
+    left: 12vw;
+}
+
+.right {
+    right: 12vw;
+}
+
+.center {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    z-index: 5;
+}
+
+.bckbtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.bckbtn:hover {
+    transform: scale(1.05);
+    background-color:darkgreen;
+}
+
+@media (max-width: 1100px) {
+    .cards {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+    }
+
+    .card {
+        position: static;
+        transform: none;
+    }
+}

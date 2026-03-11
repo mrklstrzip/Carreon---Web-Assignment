@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100%;
+    
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("crazydavebg.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.skill{
+    position: absolute;
+    width: 8vw;
+}
+
+.skill1{
+    top: 20%;
+    left: 58%;
+}
+
+.skill2{
+    top: 20%;
+    left: 68%;
+}
+
+.skill3{
+    top: 20%;
+    left: 78%;
+}
+
+.skill4{
+    top: 48%;
+    left: 55%;
+}
+
+.skill5{
+    top: 45%;
+    left: 64%;
+}
+
+.skill6{
+    top: 45%;
+    left: 74%;
+}
+
+.skill7{
+    top: 45%;
+    left: 83%;
+}
+
+.bckbtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.bckbtn:hover {
+    transform: scale(1.05);
+    background-color:darkgreen;
+}
